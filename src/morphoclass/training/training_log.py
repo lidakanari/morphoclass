@@ -183,5 +183,5 @@ class TrainingLog:
         """Load the training log from disk."""
         device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-        data = torch.load(path, map_location=device)
+        data = torch.load(path, map_location=device, weights_only=False)
         return cls.from_dict(data)

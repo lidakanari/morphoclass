@@ -13,7 +13,6 @@ imbalanced-learn==0.8.0
 jinja2==2.11.3
 matplotlib==3.5.1
 morphio==3.3.3
-morphology-workflows==0.3.0
 networkx==2.5
 neurom==3.1.0
 NeuroR==1.6.1

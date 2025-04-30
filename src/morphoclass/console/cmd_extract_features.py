@@ -263,8 +263,8 @@ def cli(
             for sample, diagram in zip(dataset, diagrams):
                 image = get_persistence_image_data(
                     diagram,
-                    xlims=(xmin_normalized, xmax),
-                    ylims=(ymin_normalized, ymax),
+                    xlim=(xmin_normalized, xmax),
+                    ylim=(ymin_normalized, ymax),
                 )
                 image = np.rot90(image)
                 image = image[np.newaxis, np.newaxis]  # shape = (batch, c, w, h)
